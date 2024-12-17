@@ -16,7 +16,7 @@ export default function SignUpPage() {
       const response = await axios.post("/api/users/signup", user);
       const data = await response.data;
       console.log(data);
-      router.push("/profile/" + data.savedUser._id);
+      router.push("/profile");
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       console.log("Sign up failed", error.message);

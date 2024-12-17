@@ -16,7 +16,7 @@ export default function LoginPage() {
       setLoading(true);
       const response = await axios.post("/api/users/login", user);
       console.log("Login Success", response.data);
-      router.push("/profile/" + response.data.user._id);
+      router.push("/profile");
       setLoading(false);
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
