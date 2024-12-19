@@ -60,7 +60,12 @@ export default function LoginPage() {
         onChange={(e) => setUser({ ...user, password: e.target.value })}
         placeholder="password"
       />
-
+      <Link
+        href="/resetpassword"
+        className="w-52 mb-4 hover:underline text-blue-500 text-right items-right text-sm"
+      >
+        Forgot Password
+      </Link>
       <button
         className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
         onClick={onLogin}
